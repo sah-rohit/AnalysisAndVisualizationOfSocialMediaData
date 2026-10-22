@@ -1,0 +1,99 @@
+# ==============================================================================
+# Byte-compiled / optimized / Python runtime files
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# Virtual Environments (Local to each machine)
+# ==============================================================================
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# Jupyter Notebooks & Checkpoints
+# ==============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==============================================================================
+# IDEs and Code Editors
+# ==============================================================================
+# JetBrains / PyCharm
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Other Editors
+*.sublime-project
+*.sublime-workspace
+
+# ==============================================================================
+# Operating System files
+# ==============================================================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# ==============================================================================
+# Archives & Compressed Backups (Do not track in Git)
+# ==============================================================================
+*.rar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+
+# ==============================================================================
+# Datasets & Large Data Files (>100MB exceeds GitHub push limit)
+# Keep directory structure via .gitkeep, ignore data contents and caches
+# ==============================================================================
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Cache directories (Hugging Face cache, DuckDB temp, etc.)
+.cache/
+data/**/.cache/
+*.parquet
+*.csv
+*.feather
+*.h5
+*.arrow
+
+# ==============================================================================
+# Logs & Temporary Files
+# ==============================================================================
+*.log
+*.tmp
