@@ -11,9 +11,10 @@ AnalysisAndVisualizationOfSocialMediaData/
 ├── data/
 │   ├── raw/                  # Raw Parquet datasets (ignored in Git; downloaded via loader)
 │   └── processed/            # Intermediate or cleaned datasets
-├── src/
-│   ├── __init__.py           # Source package marker
-│   └── loader.py             # Script to automatically fetch dataset from Hugging Face
+├── scripts/
+│   ├── __init__.py           # Package marker
+│   ├── loader.py             # Script to automatically fetch dataset from Hugging Face
+│   └── parquet_to_csv.py     # Script to convert raw parquet data to CSV format
 ├── outputs/
 │   └── figures/              # Generated plots, diagrams, and hierarchy visualizations
 ├── main.ipynb                # Main exploratory data analysis & visualization notebook
@@ -64,7 +65,13 @@ The primary dataset (`~240 MB` raw parquet) is hosted on Hugging Face and is exc
 Run the loader script to download the dataset into `data/raw/`:
 
 ```bash
-python -m src.loader
+python scripts/loader.py
+```
+
+Optional: To convert raw Parquet data into CSV format, run:
+
+```bash
+python scripts/parquet_to_csv.py
 ```
 
 This will download:

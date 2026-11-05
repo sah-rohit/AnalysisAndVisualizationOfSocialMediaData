@@ -38,6 +38,14 @@ venv.bak/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 *-checkpoint.ipynb
+.jupyter/
+*/.jupyter/
+
+# Personal / Local experiment and testing notebooks
+main_simple.ipynb
+*_simple.ipynb
+*test*.ipynb
+
 
 # ==============================================================================
 # IDEs and Code Editors
