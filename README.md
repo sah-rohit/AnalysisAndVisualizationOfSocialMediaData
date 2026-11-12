@@ -17,6 +17,11 @@ AnalysisAndVisualizationOfSocialMediaData/
 │   └── parquet_to_csv.py     # Script to convert raw parquet data to CSV format
 ├── outputs/
 │   └── figures/              # Generated plots, diagrams, and hierarchy visualizations
+├── static-site/              # Interactive project presentation website (HTML/CSS/JS)
+│   ├── assets/notebook/      # Visual assets, figures, and interactive tree inspector
+│   ├── index.html            # Main presentation report
+│   ├── script.js             # Navigation, smooth scroll, and inspector toggle
+│   └── styles.css            # Swiss editorial responsive stylesheet
 ├── main.ipynb                # Main exploratory data analysis & visualization notebook
 ├── requirements.txt          # Python project dependencies
 ├── .gitignore                # Git ignore configuration
@@ -92,7 +97,20 @@ jupyter notebook
 Open `main.ipynb` and run the cells to:
 1. Load and query Parquet data with DuckDB
 2. Analyze comment trees, thread hierarchy, and controversiality
-3. Export visualization figures to `outputs/figures/`
+3. Perform VADER sentiment scoring and technical importance classification
+4. Export visualization figures to `outputs/figures/`
+
+---
+
+## 🌐 Project Presentation Website
+
+The repository includes a responsive editorial presentation website in `static-site/` showcasing the project overview, problem statement, methodology, interactive DAG comment tree, sentiment breakdowns, and research findings:
+
+- Open [`static-site/index.html`](file:///c:/Users/Medam%20Hexnebyek/Desktop/AnalysisAndVisualizationOfSocialMediaData/static-site/index.html) in any browser, or run a local server:
+  ```bash
+  python -m http.server 8000 --directory static-site
+  ```
+  Visit `http://localhost:8000` to explore the report.
 
 ---
 
