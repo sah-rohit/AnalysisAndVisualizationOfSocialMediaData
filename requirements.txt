@@ -19,3 +19,16 @@ requests>=2.31.0
 # Interactive Notebook Environment
 jupyter>=1.0.0
 ipykernel>=6.29.0
+
+pandas>=2.1
+numpy>=1.26
+duckdb>=1.0
+scikit-learn>=1.4
+matplotlib>=3.8
+datasets>=2.19
+transformers>=4.44
+accelerate>=0.33
+sentence-transformers>=3.0
+setfit>=1.0
+torch>=2.2
+tqdm>=4.66
